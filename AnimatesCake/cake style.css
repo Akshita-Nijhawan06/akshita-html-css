@@ -1,0 +1,72 @@
+body {
+  background: #fde68a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cake {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.plate {
+  width: 220px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+}
+
+.layer {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background: #f87171;
+  border-radius: 5px;
+}
+
+.layer-bottom {
+  bottom: 20px;
+}
+
+.layer-middle {
+  bottom: 70px;
+  background: #fb923c;
+}
+
+.layer-top {
+  bottom: 120px;
+  background: #34d399;
+}
+
+.candle {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: #0ea5e9;
+  top: 40px;
+  left: 95px;
+}
+
+.flame {
+  position: absolute;
+  top: 0;
+  left: 97px;
+  width: 6px;
+  height: 20px;
+  background: #facc15;
+  border-radius: 50%;
+  animation: flicker 0.5s infinite alternate;
+  box-shadow: 0 0 15px 5px #fde047;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1) translateY(0); }
+  100% { transform: scale(1.2) translateY(-2px); }
+}

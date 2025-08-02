@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cf6c82;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #60edc3;
+  animation: flickerGlow 1.5s infinite alternate;
+}
+
+@keyframes flickerGlow {
+  0% {
+    text-shadow: 0 0 5px #facc15, 0 0 10px #facc15, 0 0 20px #facc15;
+    opacity: 0.8;
+  }
+  100% {
+    text-shadow: 0 0 10px #fbbf24, 0 0 20px #facc15, 0 0 30px #fde047;
+    opacity: 1;
+  }
+}
